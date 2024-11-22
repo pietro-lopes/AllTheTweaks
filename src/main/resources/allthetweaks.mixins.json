@@ -7,7 +7,6 @@
   "mixins": [
   ],
   "client": [
-    "MixinServerStatusPinger$1",
     "NameBrandsOnly"
   ],
   "injectors": {

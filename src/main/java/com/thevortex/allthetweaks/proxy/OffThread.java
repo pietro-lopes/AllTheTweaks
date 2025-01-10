@@ -10,7 +10,7 @@ import net.neoforged.neoforge.common.NeoForge;
 public class OffThread {
 @OnlyIn(net.neoforged.api.distmarker.Dist.CLIENT)
     public static void startDRP() {
-            MyCons.setWindowIcon();
+            //MyCons.setWindowIcon();
             
             DRP.start();        
            

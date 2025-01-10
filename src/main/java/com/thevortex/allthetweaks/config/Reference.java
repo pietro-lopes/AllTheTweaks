@@ -36,6 +36,8 @@ public class Reference {
     public static final TagKey<Item> ATMSTAR_BLOCK_ITEM = ItemTags.create(Reference.block("atm_star"));
     public static final TagKey<Item> GREGSTAR_BLOCK_ITEM = ItemTags.create(Reference.block("greg_star"));
 
+    public static final TagKey<Item> STORAGE_BLOCKS = ItemTags.create(Reference.forge("storage_blocks"));
+
     public static final TagKey<Item> ATMSTAR = ItemTags.create(Reference.tweaks("atm_star"));
     public static final TagKey<Item> GREGSTAR = ItemTags.create(Reference.tweaks("greg_star"));
 

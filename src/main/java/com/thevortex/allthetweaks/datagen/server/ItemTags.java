@@ -22,6 +22,12 @@ public class ItemTags extends ItemTagsProvider {
         tag(Reference.NETHERSTAR_BLOCK_ITEM).add(TweakBlocks.NETHERSTAR_BLOCK_ITEM.get());
         tag(Reference.ATMSTAR_BLOCK_ITEM).add(TweakBlocks.ATMSTAR_BLOCK_ITEM.get());
         tag(Reference.GREGSTAR_BLOCK_ITEM).add(TweakBlocks.GREGSTAR_BLOCK_ITEM.get());
+        
+        tag(Reference.STORAGE_BLOCKS).add(TweakBlocks.ENDERPEARL_BLOCK_ITEM.get());
+        tag(Reference.STORAGE_BLOCKS).add(TweakBlocks.NETHERSTAR_BLOCK_ITEM.get());
+        tag(Reference.STORAGE_BLOCKS).add(TweakBlocks.ATMSTAR_BLOCK_ITEM.get());
+        tag(Reference.STORAGE_BLOCKS).add(TweakBlocks.GREGSTAR_BLOCK_ITEM.get());
+        
         tag(Reference.ATMSTAR).add(TweakBlocks.ATMSTAR.get());
         tag(Reference.GREGSTAR).add(TweakBlocks.GREGSTAR.get());
     }

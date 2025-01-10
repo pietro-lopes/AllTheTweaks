@@ -24,5 +24,6 @@ public class BlockTags extends BlockTagsProvider
         tag(Reference.NETHERSTAR_BLOCK).add(TweakBlocks.NETHERSTAR_BLOCK.get());
         tag(Reference.ATMSTAR_BLOCK).add(TweakBlocks.ATMSTAR_BLOCK.get());
         tag(Reference.GREGSTAR_BLOCK).add(TweakBlocks.GREGSTAR_BLOCK.get());
+
     }
 }

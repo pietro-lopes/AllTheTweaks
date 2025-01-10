@@ -4,8 +4,6 @@ import com.thevortex.allthetweaks.blocks.TweakBlocks;
 import com.thevortex.allthetweaks.config.Configuration;
 import com.thevortex.allthetweaks.config.Reference;
 import com.thevortex.allthetweaks.proxy.MyCons;
-import com.thevortex.allthetweaks.proxy.OffThread;
-
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.entity.EntityRenderer;
 import net.minecraft.client.renderer.entity.LivingEntityRenderer;
@@ -60,16 +58,17 @@ public class AllTheTweaks
     }
 
 
-       @EventBusSubscriber(modid = Reference.MOD_ID, value = Dist.CLIENT, bus = EventBusSubscriber.Bus.MOD)
-  public static class ClientProxy {
+    @EventBusSubscriber(modid = Reference.MOD_ID, value = Dist.CLIENT, bus = EventBusSubscriber.Bus.MOD)
+    public static class ClientProxy {
 
     @SubscribeEvent
     public static void setupClient(FMLClientSetupEvent evt) {
         if(Configuration.COMMON.discord.get()) {
-            NeoForge.EVENT_BUS.register(UpdateDRP.class);
-            DRP.start();
-            MyCons.setWindowIcon(); 
-           
+            evt.enqueueWork(() -> {
+                NeoForge.EVENT_BUS.register(UpdateDRP.class);
+                DRP.start();
+                MyCons.setWindowIcon(); 
+            });
         }
     }
    
